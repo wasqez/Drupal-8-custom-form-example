@@ -1,0 +1,16 @@
+<h4>{{ title }}</h4>
+<p>{{ slogan }}</p>
+<div>
+  <div>
+    <table>
+      <thead>
+        <tr><th>Brand name</th><th>Bass Type</th><th>Color</th><th>Date of birth</th><th>Name</th></tr>
+      </thead>
+      <tbody>
+	    {% for bass in brands %}
+        <tr><th>{{ bass.title }}</th><td>{{ bass.bass_checkboxes }}</td><th>{{ bass.color }}</th><th>{{ bass.date }}</th><th>{{ bass.name }}</th></tr>
+       {% endfor %}
+      </tbody>
+      </table>
+  </div>
+</div>

@@ -1,0 +1,22 @@
+<?php
+
+/**
+ * @file
+ * Contains bass_guitar_brands_module.module.
+ */
+
+/**
+ * Implements hook_theme().
+ */
+function bass_guitar_brands_theme($existing, $type, $theme, $path) {
+
+  return [
+    'bass_guitar_brands' => [
+      'variables' => ['brands' => [], 'title' => '', 'slogan' => ''],
+    ],
+	'bass_guitar_brands_add_form' => [
+      'render element' => 'form'
+    ],
+  ];
+}
+

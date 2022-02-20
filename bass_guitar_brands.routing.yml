@@ -1,0 +1,15 @@
+bass_guitar_brands.brandlist:
+    path: '/brandlist'
+    defaults:
+        _controller: '\Drupal\bass_guitar_brands\Controller\BassGuitarBrandsController::bassGuitarBrandslist'
+        _title: 'Bass Guitar Brands'
+    requirements:
+        _access: 'TRUE'
+
+bass_guitar_brands.form:
+    path: '/add/brand'
+    defaults:
+        _form: '\Drupal\bass_guitar_brands\Form\BassGuitarBrandClassForm'
+        _title: 'Add your favorite Bass guitar Brand'
+    requirements:
+        _access: 'TRUE'
